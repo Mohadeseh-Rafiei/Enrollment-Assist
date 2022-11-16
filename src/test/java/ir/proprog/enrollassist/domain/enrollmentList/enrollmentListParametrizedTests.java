@@ -109,7 +109,8 @@ public class enrollmentListParametrizedTests {
     void checkEnrollmentRulesTests(EnrollmentList value, Integer violationLength, String message) {
         List<EnrollmentRuleViolation> violations = value.checkEnrollmentRules();
         assertEquals(violationLength, violations.size());
-        if (violations.size() == 1)
+        if(violations.size() != 0){
             assertEquals(message, violations.get(0).toString());
+        }
     }
 }

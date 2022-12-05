@@ -20,7 +20,7 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class enrollmentListParametrizedTests {
+public class EnrollmentListParametrizedTests {
     public static Stream<Arguments> enrollmentListGenerator() throws Exception {
         Student student = new Student("810198402", "Undergraduate");
 
